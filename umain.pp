@@ -5,10 +5,12 @@ unit umain;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, uInsulinData, uImport, typinfo, opensslsockets, fphttpclient, sha1, LCLType;
+  Classes,StdCtrls,SysUtils,Forms,Controls,Graphics,Dialogs,uInsulinData,
+  uImport,typinfo,opensslsockets,fphttpclient,sha1,LCLType;
 
 type
   TfMain = class(TForm)
+    lLicense:TLabel;
     odCSV:TOpenDialog;
     procedure FormCreate(Sender:TObject);
   private
