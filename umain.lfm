@@ -1,0 +1,14 @@
+object fMain: TfMain
+  Left = 748
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'fMain'
+  OnCreate = FormCreate
+  object odCSV: TOpenDialog
+    Title = 'Open Bolus File'
+    Filter = 'Glooko Insulin Export|bolus_data_*.csv;insulin_data_*.csv|CSV file|*.csv'
+    Left = 292
+    Top = 108
+  end
+end

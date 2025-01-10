@@ -1,0 +1,82 @@
+object fImport: TfImport
+  Left = 748
+  Height = 515
+  Top = 250
+  Width = 1003
+  Caption = 'fImport'
+  ClientHeight = 515
+  ClientWidth = 1003
+  OnCreate = FormCreate
+  object lvSync: TListView
+    Left = 0
+    Height = 465
+    Top = 0
+    Width = 1003
+    Align = alClient
+    AutoSort = False
+    BorderStyle = bsNone
+    Columns = <    
+      item
+        Caption = '#'
+      end    
+      item
+        AutoSize = True
+        Caption = 'Timestamp'
+        Width = 75
+      end    
+      item
+        AutoSize = True
+        Caption = 'Type'
+        Width = 10
+      end    
+      item
+        AutoSize = True
+        Caption = 'Glucose'
+        Width = 10
+      end    
+      item
+        AutoSize = True
+        Caption = 'Carbs'
+        Width = 10
+      end    
+      item
+        AutoSize = True
+        Caption = 'Dose'
+        Width = 10
+      end    
+      item
+        AutoSize = True
+        Caption = 'Initial'
+        Width = 10
+      end    
+      item
+        AutoSize = True
+        Caption = 'Extended'
+        Width = 10
+      end>
+    ReadOnly = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object pnAct: TPanel
+    Left = 0
+    Height = 50
+    Top = 465
+    Width = 1003
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 1003
+    TabOrder = 1
+    object bRun: TButton
+      Left = 927
+      Height = 48
+      Top = 1
+      Width = 75
+      Align = alRight
+      Caption = 'Run'
+      ModalResult = 6
+      TabOrder = 0
+      OnClick = bRunClick
+    end
+  end
+end
